@@ -8,8 +8,8 @@ io.on('connection', function(){
 });
 
 
-app.get('/', function (req, res) {
-  res.send('hi');
+app.get('*', function (req, res) {
+  res.sendfile('./public/dist/index.html');
 });
 
 server.listen(3000);
