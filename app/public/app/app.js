@@ -8,7 +8,12 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 var App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver: Resolver
+  Resolver: Resolver,
+  Socket: EmberSockets.extend({
+    host: '192.168.59.103',
+    port: 3000,
+    controllers: ['chatroom']
+  })
 });
 
 loadInitializers(App, config.modulePrefix);

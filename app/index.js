@@ -7,8 +7,8 @@ var path = require('path');
 app.use(express.static('public'));
 app.use(express.static('public/dist'));
 
-io.on('connection', function(){
-
+io.on('connection', function(socket) {
+  socket.emit('chat', "hello");
 });
 
 
