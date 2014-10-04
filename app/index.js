@@ -9,10 +9,13 @@ app.use(express.static('public/dist'));
 
 io.on('connection', function(socket) {
   socket.emit('chat', "hello");
+  socket.on('chat', function(message) {
+    console.log(message);
+  });
 });
 
 
-app.get('*', function (req, res) {
+app.get('*', function(req, res) {
   res.set('Content-Type', 'text/html');
   res.sendFile(path.resolve('./public/dist/index.html'));
 });

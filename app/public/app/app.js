@@ -11,6 +11,7 @@ var App = Ember.Application.extend({
   Resolver: Resolver,
   Socket: EmberSockets.extend({
     host: '192.168.59.103',
+    autoConnect: true,
     port: 3000,
     controllers: ['chatroom']
   })
