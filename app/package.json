@@ -1,0 +1,27 @@
+{
+  "name": "chat-app",
+  "version": "0.0.1",
+  "description": "\"eventaully p2p encrypted chat\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MISC-ellaneous/chat-app"
+  },
+  "keywords": [
+    "chat",
+    "p2p",
+    "encryption"
+  ],
+  "author": "MISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MISC-ellaneous/chat-app/issues"
+  },
+  "homepage": "https://github.com/MISC-ellaneous/chat-app",
+  "dependencies": {
+    "express": "^4.9.5"
+  }
+}
